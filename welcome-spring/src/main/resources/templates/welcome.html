@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
@@ -7,6 +7,7 @@
 <body>
 	<h1>Welcome to Spring !</h1>
 	<hr />
-
+	<h1 th:text="${name}"></h1>
+	<h3 th:text="${name}"></h3>
 </body>
 </html>
