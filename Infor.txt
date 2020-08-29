@@ -4,10 +4,15 @@
 + Spring web
 + Thymeleaf
 + Dev boot
+-SQL
 
 - edu.poly.spring
 +controllers
++Main
++java class
+-templates
 +html
++css
 
 
 - Start 2020-08-22
