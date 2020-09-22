@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class WelcomeController {
 	@RequestMapping("/welcome")
 	public String showForm(HttpServletRequest request) {
-		request.setAttribute("name", "dotaizzzzzzzzzzzzzzzzzzzzzzzzzaaaaaaaaaaaaaaaaaaaaaaaa");
+		request.setAttribute("name", "dotai");
 		return "welcome";
 	}
 }
