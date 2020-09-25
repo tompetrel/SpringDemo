@@ -1,13 +1,13 @@
-package edu.poly.spring;
+package com.softech.shop;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class StudentDemoApplication {
+public class SoftechShopApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(StudentDemoApplication.class, args);
+		SpringApplication.run(SoftechShopApplication.class, args);
 	}
 
 }

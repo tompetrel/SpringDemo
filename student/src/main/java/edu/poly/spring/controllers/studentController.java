@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/students")
 public class studentController {
+	
 	@GetMapping("")
 	public String showForm() {
 		return "student-form";

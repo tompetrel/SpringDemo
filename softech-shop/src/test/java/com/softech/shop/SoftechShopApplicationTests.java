@@ -1,10 +1,10 @@
-package edu.poly.spring;
+package com.softech.shop;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class StudentDemoApplicationTests {
+class SoftechShopApplicationTests {
 
 	@Test
 	void contextLoads() {
