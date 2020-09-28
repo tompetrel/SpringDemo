@@ -5,9 +5,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="/category/saveOrUpdate" method= "post">
-		CategoryId: <input type="text" name="categoryID" /><br /><br />
-		Name: <input type="text" name="name" /><br /><br />
+
+	<form th:action="@{/category/saveOrUpdate}" th:object="${category}"
+		method="post">
+		CategoryId: <input type="text" name="categoryID"
+			th:field="*{categoryID}" /><br /><br />
+		Name: <input type="text" name="name" th:field="*{name}" /><br /><br /> 
 		<input type="submit" value="Save" />
 	</form>
 </body>

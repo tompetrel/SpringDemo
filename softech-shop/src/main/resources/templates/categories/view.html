@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<a href="/category/add">Add New Category</a>
+	<a href="/category/list">List Add Categories</a>
+	
+	<table>
+		<tr>
+			<td>Category ID</td>
+			<td th:text="${category.categoryID}"></td>
+		</tr>
+		<tr>
+			<td>Name</td>
+			<td th:text="${category.name}"></td>
+		</tr>
+	</table>
+
+</body>
+</html>

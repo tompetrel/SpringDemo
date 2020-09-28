@@ -5,14 +5,22 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	<a href="/category/add">Add New Category</a>
 	<table>
 		<tr>
 			<td >Category ID</td>
 			<td >Name</td>
 			<td>&nbsp;</td>
 		</tr>
-		
+		<tr th:each="cate : ${list}">
+			<td th:text="${cate.categoryID}"></td>
+			<td th:text="${cate.name}"></td>
+			<td>
+				<a th:href="@{'/category/view/' + ${cate.categoryID}}">View</a>|
+				<a th:href="@{'/category/edit/' + ${cate.categoryID}}">Edit</a>|
+				<a th:href="@{'/category/delete/' + ${cate.categoryID}}">Delete</a>
+			</td>
+		</tr>
 	</table>
 
 </body>
