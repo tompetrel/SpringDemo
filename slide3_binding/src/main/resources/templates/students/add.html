@@ -8,9 +8,10 @@
 	<form th:action="@{/students/add}" th:object="${student}" method="post">
 		Major:
 		<select th:field="*{majorId}">
-			<option th:each="item : ${major}" 
+			<option th:each="item : ${majors}" 
 				th:text="${item.name}" 
-				th:value="${item.majorId}"></option>
+				th:value="${item.majorId}">
+				</option>
 		</select><br /><br />
 		Student ID: <input type="text" th:field="*{studentId}" /><br />
 		<br /> Name: <input type="text" th:field="*{name}" /><br />

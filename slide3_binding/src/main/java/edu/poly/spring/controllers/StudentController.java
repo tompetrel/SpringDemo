@@ -19,9 +19,9 @@ public class StudentController {
 	@ModelAttribute("majors")
 	List<Major> getMajors(){
 		List<Major> list = new ArrayList<>();
-		Major m1 = new Major(1,"Java");
-		Major m2 = new Major(2,"PHP");
-		Major m3 = new Major(3,"C#");
+		Major m1 = new Major(1, "Java");
+		Major m2 = new Major(2, "PHP");
+		Major m3 = new Major(3, "C#");
 		
 		list.add(m1);
 		list.add(m2);
