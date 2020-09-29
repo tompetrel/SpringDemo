@@ -6,6 +6,12 @@
 </head>
 <body>
 	<form th:action="@{/students/add}" th:object="${student}" method="post">
+		Major:
+		<select th:field="*{majorId}">
+			<option th:each="item : ${major}" 
+				th:text="${item.name}" 
+				th:value="${item.majorId}"></option>
+		</select><br /><br />
 		Student ID: <input type="text" th:field="*{studentId}" /><br />
 		<br /> Name: <input type="text" th:field="*{name}" /><br />
 		<br /> <input type="submit" value="Add Student" />

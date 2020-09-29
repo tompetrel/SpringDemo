@@ -2,7 +2,7 @@ package edu.poly.spring.model;
 
 public class Student {
 	private String studentId, name;
-
+	private int majorId;
 	public Student() {
 		
 	}
@@ -26,6 +26,14 @@ public class Student {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public int getMajorId() {
+		return majorId;
+	}
+
+	public void setMajorId(int majorId) {
+		this.majorId = majorId;
 	}
 	
 }
